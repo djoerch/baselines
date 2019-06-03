@@ -14,6 +14,8 @@ from baselines.common.tf_util import get_session
 from baselines import logger
 from importlib import import_module
 
+import rl_tracto
+
 try:
     from mpi4py import MPI
 except ImportError:
