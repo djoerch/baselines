@@ -191,7 +191,7 @@ def parse_cmdline_kwargs(args):
         except (NameError, SyntaxError):
             return v
 
-    return {k: parse(v) for k,v in parse_unknown_args(args).items()}
+    return {k: parse(v) for k,v in parse_unknown_args(args).items() if k != 'settings'}
 
 
 
